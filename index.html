@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Netflix</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            }
+           body{
+            background-image:linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ), url('back.jpg');
+            background-repeat: no-repeat;
+            background-position:center/cover;
+            height:100%;
+    
+           } 
+           .navbar{
+            display: flex;
+            height:75px;
+            box-sizing: border-box;
+            justify-content: space-between ;
+            align-items: center;
+           }
+           .navbar img{
+            height: 45px;
+            width:155px;
+            padding-left: 22px;
+            cursor: pointer;
+           }
+           #but{
+            height:34px;
+            width:90px;
+            border-radius: 5px;
+            background-color: red;
+            cursor: pointer;
+            margin:20px;
+            color:white;
+            border:2px solid red;
+            font-size:16px;
+           }
+           #but:hover{
+            transform: scale(0.98);
+            
+           }
+           .main{
+            color:white;
+           }
+           section{
+            height:500px;
+            width:100vw;
+            
+            
+        }
+        .main{
+            display: flex;
+            margin:65px;
+            flex-direction: column;
+            align-items: center;
+            
+
+        }
+        .main h1{
+         margin:75px;
+         font-size:32px;
+        
+
+        }
+        .main p{
+            padding:12px;
+            font-size:26px;
+        
+        }
+        #name{
+            width:500px;
+            height:39px;
+            padding-left:50px;
+            font-size:16px;
+        }
+        button:hover{
+            transform: scale(0.98);
+        }
+        button{
+            margin:3px;
+            width:200px;
+            font-size:20px;
+            height:35px;
+            background-color: red;
+            color:white;
+            cursor: pointer;
+        }
+        @media (max-width:600px)
+        {
+            #name{
+                width:250px;
+                padding-left:25px;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .main{
+                display: block;
+                text-align:center;
+            }
+        body{background-image:linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),url('back.jpg');
+
+        }
+        @media (max-width:425px)
+        {
+            body{
+                position: sticky;
+            }
+        }
+        }
+        </style>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    <div class="navbar">
+     <img src="logos.jpg">
+     <button id="but">SIGN UP</button>   
+    </div>  
+    <section>
+   <div class="main">
+    <h1>Unlimited movies,TV shows,and more</h1>
+    <p>Watch anywhere,Cancel anytime</p>
+    <p>Ready to watch?Enter your e-mail to create or restart your membership</p>
+    <input type="text" id="name" placeholder="Enter your email address"><button>Get started 	&#8594;</button>
+   </div>
+   </section>
+
+
+    
+        
+</body>
+</html>
